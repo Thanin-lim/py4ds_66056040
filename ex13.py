@@ -44,7 +44,7 @@ def medians(m):
         summary=(l+ls)/2
         return summary
     else:
-        return ls
+        return l
 
 
 if __name__=='__main__':
