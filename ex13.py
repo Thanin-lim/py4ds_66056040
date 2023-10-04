@@ -29,13 +29,23 @@ def averages(list_avg):
         totals=totals/avge
         return totals
 
-def mediens(m):
+def medians(m):
     if m.__len__()==0:
         return 0
+    s=sorted(m)
+    a=len(s)
+    f=(a//2)
+    # d=a%f
+    l=s[f]
+    if a%f==0:
+        k=(a//2-1)
+        ll=k+a%f
+        ls=s[ll]
+        summary=(l+ls)/2
+        return summary
     else:
-        s=sorted(m)
-        a=len(m)//m
-        print(a)
+        return l
+
 
 if __name__=='__main__':
     print(cal([])==0)
@@ -45,6 +55,10 @@ if __name__=='__main__':
     print(averages([2,2,2])==2)
     print(averages([1,2,3])==4)
     print(averages([0,0,0])==0)
-    print(mediens([20,3,10]))
+    print(medians([])==None)
+    print(medians([1,2,3])==2)
+    print(medians([3,7,10,4,1,9,6,5,2,8])==5.5)
+    print(medians([3,7,10,4,1,9,6,2,8])==6)
+
 #%%
 #%%
