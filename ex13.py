@@ -45,6 +45,18 @@ def medians(m):
         return summary
     else:
         return l
+def modes(number):
+    if number.__len__()==0:
+        return 0
+    s={}
+    for i in number:
+        if not i in s:
+            s[i]=1
+        else:
+            s[i]+=1
+            ds=max(s.values())
+    value = {i for i in s if s[i]==ds}
+    return value
 
 
 if __name__=='__main__':
@@ -59,6 +71,7 @@ if __name__=='__main__':
     print(medians([1,2,3])==2)
     print(medians([3,7,10,4,1,9,6,5,2,8])==5.5)
     print(medians([3,7,10,4,1,9,6,2,8])==6)
+    print(modes([1,2,2,3,3,200,200,200,200,1,2])==3)
 
 #%%
 #%%
