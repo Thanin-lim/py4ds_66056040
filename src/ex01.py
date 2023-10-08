@@ -4,33 +4,30 @@ Execise 1
 
 #input
 def greeting():
-    """
-    Function to print a greeting message in Thai language.
-    """
+   print("สวัสดีชาวลาดกระบัง")
     # TODO : complete this
-    pass
+
 
 
 def know_my_name():
-    """
-    Asks the user for their name and returns it.
+    n=input("")
+    print(n)
+    return n
 
-    Parameters:
-        None
-
-    Returns:
-        str: The name entered by the user.
-    """
     # TODO : complete this
     pass
 
 
 def say_hi(name=None):
-    """
-    Print a greeting message with the given name.
-
-    Args:
-        name (str, optional): The name to greet. Defaults to None.
-    """
+    name='เจษ'
+    print('สวัสดีคุณ'+name)
     # TODO : complete this
     pass
+
+
+if __name__=='__main__':
+    print(know_my_name())
+
+#%%
+
+#%%
