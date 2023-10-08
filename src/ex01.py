@@ -5,7 +5,7 @@ Execise 1
 #input
 def greeting():
    print("สวัสดีชาวลาดกระบัง")
-    # TODO : complete this
+    # Fix : complete this
 
 
 
@@ -14,14 +14,14 @@ def know_my_name():
     print(n)
     return n
 
-    # TODO : complete this
+    # Fix : complete this
     pass
 
 
 def say_hi(name=None):
     name='เจษ'
     print('สวัสดีคุณ'+name)
-    # TODO : complete this
+    # Fix : complete this
     pass
 
 
