@@ -4,28 +4,20 @@ Execise 3
 
 
 def is_odd(num):
-    """
-    Check if a number is odd.
+    if num %2==1:
+        return True
+    else:
+        return False
 
-    Args:
-        num (int): The number to be checked.
+    # Fix : complete this
 
-    Returns:
-        bool: True if the number is odd, False otherwise.
-    """
-    # TODO : complete this
-    pass
 
 
 def is_even(num):
-    """
-    Determines if a given number is even.
+    if num%2==0:
+        return True
+    else:
+        return False
 
-    Parameters:
-        num (int): The number to be checked.
+    # Fix : complete this
 
-    Returns:
-        bool: True if the number is even, False otherwise.
-    """
-    # TODO : complete this
-    pass
