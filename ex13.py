@@ -37,7 +37,7 @@ def medians(m):
     f=(a//2)
     # d=a%f
     l=s[f]
-    if a%f==0:
+    if a%2==0:
         k=(a//2-1)
         ll=k+a%f
         ls=s[ll]
