@@ -3,27 +3,23 @@ Exercise 13
 """
 
 
-def calc_sum(params):
-    """
-    Calculate the sum of a list of numbers.
+def calc_sum(num):
+    if num.__len__()==0:
+        return 0
+    elif num.__len__()>1:
+        sums=sum(num)
+        return sums
 
-    Parameters:
-    - num_list (list): A list of numbers.
 
-    Returns:
-    - int: The sum of all the numbers in the list.
-    """
     pass
 
 
-def calc_prod(params):
-    """
-    Calculates the product of all the numbers in the given list.
+def calc_prod(num):
+    c=1
+    for i in num:
+        c=(c*i)
+    return c
 
-    Parameters:
-        num_list (list): A list of numbers.
-
-    Returns:
-        int: The product of all the numbers in the list.
-    """
     pass
+
+#%%
