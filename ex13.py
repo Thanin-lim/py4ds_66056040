@@ -55,7 +55,7 @@ def modes(number):
         else:
             s[i]+=1
             ds=max(s.values())
-    value = {i for i in s if s[i]==ds}
+    value = {i for i in s if s[i]==int(ds)}
     return value
 
 
@@ -72,6 +72,6 @@ if __name__=='__main__':
     print(medians([3,7,10,4,1,9,6,5,2,8])==5.5)
     print(medians([3,7,10,4,1,9,6,2,8])==6)
     print(modes([1,2,2,3,3,200,200,200,200,1,2])==3)
-
+    print(modes([1, 2, 3, 4, 4]))
 #%%
 #%%
