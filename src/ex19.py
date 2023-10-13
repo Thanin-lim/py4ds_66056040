@@ -11,6 +11,16 @@ SPECIAL = '~!@#$%^&*()_+'                       # 13
 ALL_CHARS = LOWER_LETTERS + UPPER_LETTERS + NUMBERS + SPECIAL
 
 
-def gen_password(param):
-    # TODO : complete this
+def gen_password(length):
+    # Fix : complete this
+    my_length = length
+    if length < 12:
+        my_length = 12
+    my_pass = [LOWER_LETTERS[random.randint(0, 25)], UPPER_LETTERS[random.randint(0, 25)],
+               NUMBERS[random.randint(0, 9)], SPECIAL[random.randint(0, 12)]]
+    while len(my_pass) < my_length:
+        my_pass.append(ALL_CHARS[random.randint(0, 74)])
+    random.shuffle(my_pass)
+    return ''.join(my_pass)
+    # Fix : complete this
     pass
